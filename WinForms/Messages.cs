@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace RedBlinkWinForms
 {
@@ -14,15 +14,22 @@ namespace RedBlinkWinForms
                 {
                     _Excercises = new string[]
                     {
-                        "Wiederkauen",
-                        "Augentraining",
+                        "Kauen",
+                        "Augentraining Bewegung",
                         "Schulterkreisen",
-                        "Wirbelsäule entblocken",
-                        "Weitsehen",
-                        "Atlas gleiten",
+                        "Sonnenübung",
+                        "Kopf auf dem Atlas gleiten",
                         "Blickfang",
-                        "Hände ausschütteln",
-                        "Spaziergang"
+                        "Arme ausschütteln",
+                        "Flanieren",
+                        "Augentraining in die Ferne sehen",
+                        "Kopf Bewegen",
+                        "Meditation",
+                        "Kleine Muskeln trainieren",
+                        "Grimassen schneiden",
+                        "Diagonal Dehnung",
+                        "Beine strecken",
+                        "Augen schließen"
                     };
                 }
 
