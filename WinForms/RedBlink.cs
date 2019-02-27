@@ -56,6 +56,7 @@ namespace RedBlinkWinForms
             this.FormBorderStyle = FormBorderStyle.None;
 
             this.lbl_RedLabel.BackColor = Color.Red;
+            this.lbl_RedLabel.Text = "Red";
         }
 
         void DoubleClickTimer_Tick(object sender, EventArgs e)
