@@ -10,13 +10,14 @@ namespace RedBlinkWinForms
 {
     public partial class RedBlink : Form
     {
-        private Task _TimeController;
-        private CancellationTokenSource _CancellationTokenSource;
+        private Task _timeController;
+        private CancellationTokenSource _cancellationTokenSource;
 
-        private Timer _DoubleClickTimer = new Timer();
-        private bool _IsFirstClick = true;
-        private bool _IsDoubleClick = false;
-        private int _Milliseconds = 0;
+        private readonly Timer _doubleClickTimer = new Timer();
+        private readonly Random _random = new Random();
+        private bool _isFirstClick = true;
+        private bool _isDoubleClick = false;
+        private int _milliseconds = 0;
 
         public RedBlink()
         {
@@ -27,27 +28,26 @@ namespace RedBlinkWinForms
 
         private void InitComponents()
         {
-            _CancellationTokenSource = new CancellationTokenSource();
+            _cancellationTokenSource = new CancellationTokenSource();
 
-            _TimeController = new Task(async (token) =>
+            _timeController = new Task(async (token) =>
             {
-                try
+                while (true)
                 {
-                    while (true)
+                    await Task.Delay(1000 * 60 * 20);
+                    this.Invoke((MethodInvoker) delegate
                     {
-                        await Task.Delay(1000);
-                        this.Invoke((MethodInvoker)delegate { Visible = true; });
-                    }
+                        Visible = true;
+                        var index = _random.Next(Messages.MessageCount);
+                        lbl_RedLabel.Text = Messages.Excercises[index];
+                    });
                 }
-                catch { }
-            }, _CancellationTokenSource.Token);
+            }, _cancellationTokenSource.Token);
 
-            _TimeController.Start();
+            _timeController.Start();
 
-
-            _DoubleClickTimer.Interval = 100;
-            _DoubleClickTimer.Tick +=
-                new EventHandler(DoubleClickTimer_Tick);
+            _doubleClickTimer.Interval = 100;
+            _doubleClickTimer.Tick += new EventHandler(DoubleClickTimer_Tick);
         }
 
         private void InitControls()
@@ -57,20 +57,24 @@ namespace RedBlinkWinForms
 
             this.lbl_RedLabel.BackColor = Color.Red;
             this.lbl_RedLabel.Text = "Red";
+            this.lbl_RedLabel.Font = new Font(
+                FontFamily.GenericSansSerif,
+                48f,
+                FontStyle.Regular);
         }
 
         void DoubleClickTimer_Tick(object sender, EventArgs e)
         {
-            _Milliseconds += 100;
+            _milliseconds += 100;
 
-            if (_Milliseconds >= SystemInformation.DoubleClickTime)
+            if (_milliseconds >= SystemInformation.DoubleClickTime)
             {
-                _DoubleClickTimer.Stop();
+                _doubleClickTimer.Stop();
 
-                if (_IsDoubleClick)
+                if (_isDoubleClick)
                 {
-                    _CancellationTokenSource.Cancel();
-                    _TimeController.Wait();
+                    _cancellationTokenSource.Cancel();
+                    _timeController.Wait();
                     Application.Exit();
                 }
                 else
@@ -78,24 +82,24 @@ namespace RedBlinkWinForms
                     this.Visible = false;
                 }
 
-                _IsFirstClick = true;
-                _IsDoubleClick = false;
-                _Milliseconds = 0;
+                _isFirstClick = true;
+                _isDoubleClick = false;
+                _milliseconds = 0;
             }
         }
 
         private void Lbl_RedLabel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (_IsFirstClick)
+            if (_isFirstClick)
             {
-                _IsFirstClick = false;
-                _DoubleClickTimer.Start();
+                _isFirstClick = false;
+                _doubleClickTimer.Start();
             }
             else
             {
-                if (_Milliseconds < SystemInformation.DoubleClickTime)
+                if (_milliseconds < SystemInformation.DoubleClickTime)
                 {
-                    _IsDoubleClick = true;
+                    _isDoubleClick = true;
                 }
             }
         }

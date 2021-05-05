@@ -4,15 +4,15 @@ namespace RedBlinkWinForms
 {
     public static class Messages
     {
-        private static string[] _Excercises;
+        private static string[] _excercises;
 
         public static string[] Excercises
         {
             get
             {
-                if (_Excercises == null)
+                if (_excercises == null)
                 {
-                    _Excercises = new string[]
+                    _excercises = new string[]
                     {
                         "Kauen",
                         "Augentraining Bewegung",
@@ -33,7 +33,7 @@ namespace RedBlinkWinForms
                     };
                 }
 
-                return _Excercises;                
+                return _excercises;                
             }
         }
 
