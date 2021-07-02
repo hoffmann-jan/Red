@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlinkWinForms", "WinForms\RedBlinkWinForms.csproj", "{BA50D5D5-45B0-4458-84AE-D2F463EE8214}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedTaskBar", "Red\RedTaskBar.csproj", "{0719EB56-5A36-43DB-B456-84A826A56EDD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{91B35A9D-11EC-4212-A16C-3ECB00D97791}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedTaskBar", "UI\RedTaskBar\RedTaskBar.csproj", "{084244B5-37E5-494F-9055-6D68F57470C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +19,16 @@ Global
 		{BA50D5D5-45B0-4458-84AE-D2F463EE8214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA50D5D5-45B0-4458-84AE-D2F463EE8214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA50D5D5-45B0-4458-84AE-D2F463EE8214}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084244B5-37E5-494F-9055-6D68F57470C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084244B5-37E5-494F-9055-6D68F57470C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084244B5-37E5-494F-9055-6D68F57470C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084244B5-37E5-494F-9055-6D68F57470C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0719EB56-5A36-43DB-B456-84A826A56EDD} = {91B35A9D-11EC-4212-A16C-3ECB00D97791}
+		{084244B5-37E5-494F-9055-6D68F57470C2} = {91B35A9D-11EC-4212-A16C-3ECB00D97791}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5243066-5598-4E7E-8F89-BE43D6F2256D}
