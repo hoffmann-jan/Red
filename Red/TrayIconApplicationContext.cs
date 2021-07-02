@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Red
+namespace RedTaskBar
 {
     public abstract class TrayIconApplicationContext : ApplicationContext
     {
@@ -24,8 +24,8 @@ namespace Red
                 Visible = true
             };
 
-            this.TrayIcon.DoubleClick += TrayIconDoubleClickHandler;
-            this.TrayIcon.Click += TrayIconClickHandler;
+            TrayIcon.DoubleClick += TrayIconDoubleClickHandler;
+            TrayIcon.Click += TrayIconClickHandler;
         }
 
         protected virtual void OnApplicationExit(EventArgs e)
@@ -44,7 +44,7 @@ namespace Red
 
         private void ApplicationExitHandler(object sender, EventArgs e)
         {
-            this.OnApplicationExit(e);
+            OnApplicationExit(e);
         }
 
         protected virtual void OnTrayIconClick(EventArgs e)
@@ -55,12 +55,12 @@ namespace Red
 
         private void TrayIconClickHandler(object sender, EventArgs e)
         {
-            this.OnTrayIconClick(e);
+            OnTrayIconClick(e);
         }
 
         private void TrayIconDoubleClickHandler(object sender, EventArgs e)
         {
-            this.OnTrayIconDoubleClick(e);
+            OnTrayIconDoubleClick(e);
         }
     }
 }

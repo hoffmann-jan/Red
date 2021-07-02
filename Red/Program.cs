@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Red
+namespace RedTaskBar
 {
     static class Program
     {

@@ -1,24 +1,24 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Red
+namespace RedTaskBar
 {
     class RedApplicationContext : TrayIconApplicationContext
     {
         public RedApplicationContext()
         {
-            //this.TrayIcon.Icon = Resources.SmallIcon;
+            TrayIcon.Icon = Properties.Resources.tray_ico;
 
-            this.ContextMenu.Items.Add("&Settings...", null, this.SettingsContextMenuClickHandler).Font = new Font(this.ContextMenu.Font, FontStyle.Bold);
-            this.ContextMenu.Items.Add("-");
-            this.ContextMenu.Items.Add("&About...", null, this.AboutContextMenuClickHandler);
-            this.ContextMenu.Items.Add("-");
-            this.ContextMenu.Items.Add("E&xit", null, this.ExitContextMenuClickHandler);
+            ContextMenu.Items.Add("&Settings...", null, SettingsContextMenuClickHandler).Font = new Font(this.ContextMenu.Font, FontStyle.Bold);
+            ContextMenu.Items.Add("-");
+            ContextMenu.Items.Add("&About...", null, AboutContextMenuClickHandler);
+            ContextMenu.Items.Add("-");
+            ContextMenu.Items.Add("E&xit", null, ExitContextMenuClickHandler);
         }
 
         protected override void OnTrayIconDoubleClick(EventArgs e)
         {
-            this.ShowSettings();
+            ShowSettings();
 
             base.OnTrayIconDoubleClick(e);
         }
@@ -31,12 +31,12 @@ namespace Red
 
         private void ExitContextMenuClickHandler(object sender, EventArgs eventArgs)
         {
-            this.ExitThread();
+            ExitThread();
         }
 
         private void SettingsContextMenuClickHandler(object sender, EventArgs eventArgs)
         {
-            this.ShowSettings();
+            ShowSettings();
         }
 
         private void ShowSettings()

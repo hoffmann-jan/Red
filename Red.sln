@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlinkWinForms", "WinForms\RedBlinkWinForms.csproj", "{BA50D5D5-45B0-4458-84AE-D2F463EE8214}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red", "Red\Red.csproj", "{0719EB56-5A36-43DB-B456-84A826A56EDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedTaskBar", "Red\RedTaskBar.csproj", "{0719EB56-5A36-43DB-B456-84A826A56EDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{91B35A9D-11EC-4212-A16C-3ECB00D97791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0719EB56-5A36-43DB-B456-84A826A56EDD} = {91B35A9D-11EC-4212-A16C-3ECB00D97791}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5243066-5598-4E7E-8F89-BE43D6F2256D}
