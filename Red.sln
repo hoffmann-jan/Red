@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31025.218
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlinkWinForms", "WinForms\RedBlinkWinForms.csproj", "{BA50D5D5-45B0-4458-84AE-D2F463EE8214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red", "Red\Red.csproj", "{0719EB56-5A36-43DB-B456-84A826A56EDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BA50D5D5-45B0-4458-84AE-D2F463EE8214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA50D5D5-45B0-4458-84AE-D2F463EE8214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA50D5D5-45B0-4458-84AE-D2F463EE8214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0719EB56-5A36-43DB-B456-84A826A56EDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
