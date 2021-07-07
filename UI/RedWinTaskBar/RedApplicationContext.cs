@@ -1,12 +1,17 @@
-﻿using System;
+﻿using JanHoffmann.Red.CrossCutting.CoCo.Core.Contract.DependencyInjection;
+using JanHoffmann.Red.UI.RedTaskBar;
+using System;
 using System.Drawing;
 
 namespace RedTaskBar
 {
     class RedApplicationContext : TrayIconApplicationContext
     {
+        private readonly IKernelContainer _kernelContainer;
+
         public RedApplicationContext()
         {
+            _kernelContainer = new Startup().Start();
             TrayIcon.Icon = Properties.Resources.tray_ico;
 
             ContextMenu.Items.Add("&Settings...", null, SettingsContextMenuClickHandler).Font = new Font(this.ContextMenu.Font, FontStyle.Bold);

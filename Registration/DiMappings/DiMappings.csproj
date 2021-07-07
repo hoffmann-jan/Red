@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>JanHoffmann.Red.Registrations.DiMappings</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Business\AuditationWorkflows\AuditationWorkflows.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Audiation\Audiation.csproj" />
+  </ItemGroup>
+
+</Project>

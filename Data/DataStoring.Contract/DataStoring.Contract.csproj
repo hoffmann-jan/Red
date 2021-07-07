@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>JanHoffmann.Red.Data.DataStoring.Contract</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logic\Domain\Audition.Cotract\Audition.Cotract.csproj" />
+  </ItemGroup>
+
+</Project>

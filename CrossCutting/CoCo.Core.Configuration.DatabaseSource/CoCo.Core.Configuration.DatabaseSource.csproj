@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>JanHoffmann.Red.CrossCutting.CoCo.Core.Configuration.DatabaseSource</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

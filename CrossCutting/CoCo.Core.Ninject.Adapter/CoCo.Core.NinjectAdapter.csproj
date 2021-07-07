@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>JanHoffmann.Red.CrossCutting.CoCo.Core.NinjectAdapter</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="Ninject.Extensions.ContextPreservation" Version="3.3.1" />
+    <PackageReference Include="Ninject.Web.Common.Selfhost" Version="3.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

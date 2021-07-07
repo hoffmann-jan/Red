@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>JanHoffmann.Red.Logic.Domain.Audiation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CrossCutting\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+    <ProjectReference Include="..\Audition.Cotract\Audition.Cotract.csproj" />
+  </ItemGroup>
+
+</Project>
