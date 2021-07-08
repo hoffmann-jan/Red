@@ -1,4 +1,6 @@
-﻿using System;
+﻿using JanHoffmann.Red.UI.RedWinForms.Contract;
+
+using System;
 using System.Drawing;
 using System.Threading;
 using System.Threading.Tasks;
@@ -6,9 +8,9 @@ using System.Windows.Forms;
 
 using Timer = System.Windows.Forms.Timer;
 
-namespace RedBlinkWinForms
+namespace JanHoffmann.Red.UI.RedWinForms
 {
-    public partial class RedBlink : Form
+    public partial class RedBlinkForm : Form, IRedBlinkForm
     {
         private Task _timeController;
         private CancellationTokenSource _cancellationTokenSource;
@@ -19,7 +21,7 @@ namespace RedBlinkWinForms
         private bool _isDoubleClick = false;
         private int _milliseconds = 0;
 
-        public RedBlink()
+        public RedBlinkForm()
         {
             InitializeComponent();
             InitControls();

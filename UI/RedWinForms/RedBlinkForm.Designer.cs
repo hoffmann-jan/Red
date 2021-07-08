@@ -1,6 +1,6 @@
-﻿namespace RedBlinkWinForms
+﻿namespace JanHoffmann.Red.UI.RedWinForms
 {
-    partial class RedBlink
+    partial class RedBlinkForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RedBlink));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RedBlinkForm));
             this.lbl_RedLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 

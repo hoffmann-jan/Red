@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RedBlinkWinForms
+namespace JanHoffmann.Red.UI.RedWinForms
 {
     static class Program
     {
@@ -16,7 +13,7 @@ namespace RedBlinkWinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RedBlink());
+            Application.Run(new RedBlinkForm());
         }
     }
 }

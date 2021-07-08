@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace RedBlinkWinForms
+namespace JanHoffmann.Red.UI.RedWinForms
 {
     public static class Messages
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace RedTaskBar
+namespace JanHoffmann.Red.UI.RedTaskBar
 {
     public abstract class TrayIconApplicationContext : ApplicationContext
     {

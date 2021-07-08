@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BA50D5D5-45B0-4458-84AE-D2F463EE8214}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RedBlinkWinForms</RootNamespace>
-    <AssemblyName>RedBlinkWinForms</AssemblyName>
+    <RootNamespace>JanHoffmann.Red.UI.RedBlinkWinForms</RootNamespace>
+    <AssemblyName>JanHoffmann.Red.UI.RedBlinkWinForms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,11 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Messages.cs" />
-    <Compile Include="RedBlink.cs">
+    <Compile Include="RedBlinkForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RedBlink.Designer.cs">
-      <DependentUpon>RedBlink.cs</DependentUpon>
+    <Compile Include="RedBlinkForm.Designer.cs">
+      <DependentUpon>RedBlinkForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +66,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RedBlink.resx">
-      <DependentUpon>RedBlink.cs</DependentUpon>
+    <EmbeddedResource Include="RedBlinkForm.resx">
+      <DependentUpon>RedBlinkForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

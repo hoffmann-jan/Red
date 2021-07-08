@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace RedTaskBar
+namespace JanHoffmann.Red.UI.RedTaskBar
 {
     static class Program
     {

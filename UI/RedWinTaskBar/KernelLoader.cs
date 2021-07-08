@@ -13,9 +13,9 @@ using System.IO;
 
 namespace JanHoffmann.Red.UI.RedTaskBar
 {
-    internal sealed class Startup
+    internal sealed class KernelLoader
     {
-        internal IKernelContainer Start()
+        internal IKernelContainer Load()
         {
             // Initialisation
             var kernelContainer = new KernelContainer();
